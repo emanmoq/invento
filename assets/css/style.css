@@ -512,6 +512,9 @@ font-size: 1em;
     color:#3FBF13}
 
 @media(max-width:850px){
+    body{
+        font-size: 12px;
+    }
     .panelTitle h4{
         margin-top:20px
     }
@@ -533,6 +536,18 @@ font-size: 1em;
 
     .profile .dropdown-menu{
         top:7px !important
+    }
+    .loginSec{
+        padding:20px 0 10px;
+    }
+    .loginLogo{
+        margin-bottom: 15px;
+    }
+    .loginForm{
+        padding:20px
+    }
+    .formLogo{
+        margin-bottom: 10px;
     }
 }
 
