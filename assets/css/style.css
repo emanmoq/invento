@@ -385,7 +385,7 @@ color:#6D6D6D
     top:0;
     width: 100%;
     left:0;
-    height: 30%;
+    height: 50%;
     z-index: 1;
     background-color: #0B91D2;
     border-radius: 0 0 15px 15px;
@@ -410,6 +410,7 @@ position: absolute;
     z-index: 4;
     background-color: transparent;
     padding-top: 70px;
+    padding-bottom: 25px;
 }
 .loginLogo{
 margin: auto;
