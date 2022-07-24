@@ -46,6 +46,7 @@ opacity: .46;
     border:1px solid #55B1DE;
     background-color: transparent;
     padding-left: 30px;
+    height: 40px;
     
 }
 .searchForm-control:focus{
@@ -66,7 +67,7 @@ opacity: .46;
     left:0
 }
 .searchForm {
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 .searchForm  .form-group{
@@ -94,7 +95,7 @@ opacity: .46;
 .headerList{
     display: inline-flex;
     align-self: center;
-    margin-right: 70px;
+    margin-right: 50px;
 }
 .headerList li{
     display: inline-block;
@@ -117,10 +118,58 @@ color:white
 }
 .notifyLinkIcon i{
     color:#55B1DE;
-    font-size: 20px;
+    font-size: 18px;
 }
 .sideHeader{
     float: right;
+}
+.profile{
+    display: flex;
+    align-self: center;
+}
+.profileBtn{
+    padding: 0;
+}
+.profileImg{
+    float: left;width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.profile::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid #55B1DE;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    align-self: center;
+}
+.userName{
+    float:left;
+    margin-left:13px;
+    font-size: 13px;
+    font-weight: 500;
+    color:#55B1DE;
+    ;
+}
+.profile:hover .userName{
+color:white
+}
+.profile:hover::after{
+    border-top: 0.3em solid white;  
+}
+.profile  .dropdown-menu{
+    top:18px !important
+}
+.profile .dropdown-item.active,.dropdown-item:active{
+    background-color: #0B91D2 !important;
+}
+.profile  .dropdown-menu .dropdown-item{
+    color:#6D6D6D;
+    font-size: .9em;
 }
 .controlBody{
     padding:32px 0;
@@ -329,3 +378,28 @@ color:#6D6D6D
 .noMargin{
     margin-bottom: 0;
 }
+@media(max-width:850px){
+    .panelTitle h4{
+        margin-top:20px
+    }
+    .staticsBox{
+        margin-bottom: 20px;
+    }
+    .sideHeader{
+        float: none;
+    }
+    .sideHeader{
+        margin-top:10px
+    }
+    header{
+        height: auto;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    .profile .dropdown-menu{
+        top:7px !important
+    }
+}
+
