@@ -1,0 +1,331 @@
+body{
+    font-size:14px;
+    background-color: #F5FCFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;;
+}
+ul,p,h1,h2,h3,h4,h5,h6,form,.form-group{
+    margin:0;
+padding: 0;    
+list-style: none;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+header{
+    background-color: #0B91D2;
+    padding:15px 0;
+    height: 70px;
+    position: relative;
+    box-shadow:  0 0 30px rgba(11, 145, 210, .4);
+}
+header::before{
+    content: "";
+    background-image: url("../images/Intersection\ 1.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+position:absolute;
+top:0;
+left: 0;
+opacity: .46;
+}
+.logo{
+    width: 130px;
+    display: flex;
+    vertical-align: middle;
+}
+.searchForm-control{
+    width: 100%;
+    border-radius: 3px;
+    border:1px solid #55B1DE;
+    background-color: transparent;
+    padding-left: 30px;
+    
+}
+.searchForm-control:focus{
+    border:1px solid white; 
+    background-color: transparent;
+    color: white;;
+}
+.searchForm-control:focus::placeholder{
+    color:white
+}
+.searchForm-control::placeholder{
+    color:#55B1DE;
+    font-size: .95em;
+}
+.searchIcon{
+    position: absolute;
+    top:7px;
+    left:0
+}
+.searchForm {
+    position: absolute;
+    width: 100%;
+}
+.searchForm  .form-group{
+    width: 100%;;
+}
+.mailLink{
+    position: relative;
+}
+.mailLink:before{
+    position: absolute;
+    content: "";
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    top:-1px;
+    right: -1px;
+    z-index: 1;
+    background-color: #CF0000;
+}
+.sideHeader{
+    display:flex;
+    height: 100%;
+    
+}
+.headerList{
+    display: inline-flex;
+    align-self: center;
+    margin-right: 70px;
+}
+.headerList li{
+    display: inline-block;
+    padding:5px 27px;
+    position: relative;
+}
+.headerList li:first-child::after{
+    content:"";
+    height: 23px;
+    width: 2px;
+    background-color: #55B1DE;
+    border-radius: 8px;
+    overflow: hidden;
+    right: 0;
+    top:2px;
+    position: absolute;
+}
+.notifyLink:hover i{
+color:white
+}
+.notifyLinkIcon i{
+    color:#55B1DE;
+    font-size: 20px;
+}
+.sideHeader{
+    float: right;
+}
+.controlBody{
+    padding:32px 0;
+}
+.sideMenu{
+    background-color: white;
+    padding-left:16px;
+    height: 100%;;
+    padding-bottom:16px;
+    box-shadow:  0 0 20px rgba(11, 145, 210, .2);
+    padding-right: 9px;
+ 
+    border-radius: 8px;}
+.sideMenu .nav-link{
+font-size:  1.071em;
+padding: 22px 0;
+border-bottom:1px solid #EEEEEE ;
+color:#6D6D6D;
+}
+.sideMenu .nav-link:hover{
+    color:#0B91D2
+}
+.sideMenu .nav-link:last-child{
+    border-bottom: 0;
+}
+.sideLogo{
+position: absolute;
+left:40%;
+bottom:0;
+width: 50px;
+opacity: .27;
+
+}
+.sideLogo img{
+    filter: grayscale(100%);
+}
+.nav-pills{
+    width: 100%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent !important;
+    color:#3FBF13 !important;
+}
+.panelTitle h4{
+    margin-bottom: 8px;
+    color:#0B91D2;
+    font-size: 1.78em;
+    font-weight: bold;
+}
+.panelTitle p{
+    color:#3FBF13 ;
+    font-size:  1.07em;
+}
+.panelTitle{
+    margin-bottom: 32px;
+    float: left;
+}
+.staticsBox{
+    width: 100%;background-color: white;
+    height: 122px;
+    padding:16px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(11, 145, 210, .1);
+}
+.statics{
+    margin-bottom: 25px;
+    
+}
+.nopadding{
+    padding:0
+}
+.goalBox{
+    background-color: #0B91D2;
+    border-radius: 8px;
+    width: 100%;
+    height: 122px;
+    position: relative;
+    overflow: hidden;
+    padding:20px;
+    display: flex;
+}
+.goalBox:before{
+    position: absolute ;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    opacity: .54;
+}
+.categBox{
+    background-color: white;
+    border-radius: 8px;
+    height: 174px;
+    box-shadow: 0 0 25px rgba(11, 145, 210, .1);
+    margin-bottom: 16px;
+    padding:25px 0;
+    display: block;
+    transition: all .5s;
+}
+.categBox:hover{
+    box-shadow: 0 0 25px rgba(11, 145, 210, .2);   
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.help{
+    float:right;
+    font-size: 13px;
+    color:#D9D9D9
+}
+.categTitle h4{
+    margin-bottom: 16px;
+    color:#0B91D2;
+    float: left;
+    font-size:1.4em;
+    font-weight: bold;
+}
+.seeAll{
+    float: right;
+    font-size: .9em;
+    color:#6D6D6D;
+
+}
+.staticsIconCont{
+    width:53px;
+    height: 53px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 8px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.orangeBg{
+    background-color: #FFF7EA;
+}
+.staticsIcon{
+    display: flex;
+    align-self: center
+}
+.staticsNum{
+    font-size:1.21em;
+    color:#6D6D6D
+}
+.staticsBox span{
+font-size: 0.78em;
+color:#6D6D6D
+}
+.blueBox{
+    background-color:#E6EBFE ;
+}.greenBox{
+    background-color: #E7FFF7;
+}
+.innerCol{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.chartBox{
+    width: 80px;
+    float: left;
+    height: 110px;
+    display: flex;
+    align-self: center;
+    margin-right: 14px;
+}
+.goalText p{
+    font-size:1.001em;
+    color:white;
+    flex: 100%; 
+}
+.goalText span{
+    font: size 0.9em;
+    color:white;
+    flex: 100%; 
+}
+.goalText{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.categIconCont{
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    background-color: #F5FCFF;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.categIcon{
+    display: flex;
+    align-self: center;
+}
+.categBox h3{
+    margin-top: 15px;
+    font-size:1.07em;
+    color: #6D6D6D;
+    font-weight: 400;
+    text-align: center;
+}
+.noMargin{
+    margin-bottom: 0;
+}
