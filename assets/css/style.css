@@ -137,6 +137,10 @@ color:white
     border-radius: 2px;
     overflow: hidden;
 }
+.profileImg img{
+    height: 100%;
+    width:auto
+}
 .profile::after {
     display: inline-block;
     margin-left: 0.255em;
