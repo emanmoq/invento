@@ -2,6 +2,7 @@ body{
     font-size:14px;
     background-color: #F5FCFF;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 img{
     width: 100%;;
@@ -378,6 +379,137 @@ color:#6D6D6D
 .noMargin{
     margin-bottom: 0;
 }
+.loginHeader{
+    content:"";
+    position: absolute;
+    top:0;
+    width: 100%;
+    left:0;
+    height: 30%;
+    z-index: 1;
+    background-color: #0B91D2;
+    border-radius: 0 0 15px 15px;
+    box-shadow:  0 0 50px rgba(11, 145, 210, .4);
+
+}
+.loginHeader::before{
+background-image:url(../images/login.png);
+background-size: cover;
+background-repeat: no-repeat;
+opacity: .46;
+z-index: 2;
+top:0;
+left:0;
+width: 100%;
+height: 100%;;
+content:"";
+position: absolute;
+}
+.loginSec{
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+    padding-top: 70px;
+}
+.loginLogo{
+margin: auto;
+margin-bottom: 50px;
+width: 200px;
+}
+.loginForm{
+    background-color: white;
+    padding:32px 70px 44px;
+    border-radius: 8px;
+    box-shadow:  0 0 20px rgba(11, 145, 210, .2);
+}
+.formLogo{
+    margin:auto;
+    margin-bottom: 32px;
+    width: 95px;
+}
+.loginForm h2{
+    font-size: 2.85em;
+    font-weight: bold;
+    color:#3FBF13;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.loginForm p{
+    font-size:  1.07em;
+    color: #0B91D2;
+    margin-bottom: 32px;
+}
+.loginForm .form-group{
+margin-bottom: 16px;
+}
+.loginForm label{
+color:#6D6D6D;
+font-size: 1em;
+}
+.loginForm .form-control{
+    width: 100%;
+    height: 51px;
+    border-radius: 8px;
+    border:1px solid #EEEEEE;
+    font-size: .9em;
+    color:#6D6D6D
+}
+.loginForm .form-control::placeholder{
+    font-size: .9em;
+    color:#6D6D6D
+}
+.loginForm .form-group a{
+    font-size: 12px;
+    color:#6D6D6D;
+    float: right;
+}
+.loginForm .form-group{
+    position: relative;
+}
+.loginForm .form-group i{
+    position: absolute ;
+    color:#D9D9D9;
+    right: 10px;
+    top:55%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.loginBtn{
+    background-color: transparent;
+    margin-top: 16px;
+    border: 1px solid #3FBF13;
+    width: 100%;
+    border-radius: 8px;
+    height: 51px;
+    display: flex;
+    color:#3FBF13;
+    justify-content: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: all .5s;;
+    margin-bottom: 44px;
+
+}
+.loginBtn span{
+    align-self: center;
+}
+.loginBtn:hover{
+    background-color: #3FBF13;
+    color:white;
+    transition: all .5s;;
+}
+.loginForm h5{
+    font-size: 1.07em;
+    text-align: center;
+    color:#6D6D6D
+}
+.clickHere{
+    color:#0B91D2;
+    text-decoration: underline;
+}
+.clickHere:hover{
+    color:#3FBF13}
+
 @media(max-width:850px){
     .panelTitle h4{
         margin-top:20px
