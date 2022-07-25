@@ -157,9 +157,9 @@ color:white
 .userName{
     float:right;
     margin-right:13px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
-    color:#55B1DE;
+    color:#90CAE7;
     ;
 }
 .profile:hover .userName{
