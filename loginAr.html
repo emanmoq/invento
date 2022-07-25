@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Inventor </title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link href="assets/css/lightbox.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="assets/images/logo.png">
+  <link href="assets/css/styleAr.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="loginHeader">
+  </div>
+  <div class="loginSec">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="loginLogo">
+            <img src="assets/images/loginLogo.png" alt="">
+          </div>
+          <form action="" class="loginForm">
+            <div class="formLogo">
+              <img src="assets/images/formLogo.png" alt="">
+            </div>
+            <h2>دخول</h2>
+            <p>
+              الرجاء ادخال اسم المستخدم وكلمة المرور
+            </p>
+            <div class="form-group">
+              <label for="">اسم المستخدم</label>
+              <input type="text" class="form-control" placeholder="user">
+            </div>
+            <div class="form-group clearfix">
+              <label for="">كلمة المرور</label>
+              <input type="password" class="form-control" value="123456789">
+              <i class="fa fa-eye" onclick="myFunction(this)"></i>
+              <a href="javaScript:;">نسيت كلمة المرور</a>
+            </div>
+            <script>
+              function myFunction(input) {
+                  var x = $(input).parent().find(".form-control")
+                  if (x.attr('type') == "password") {
+                      x.attr('type', 'text');
+                         $(input).removeClass("fa-eye");
+                      $(input).addClass("fa-eye-slash");
+                   
+                  }
+                  else {
+                      x.attr('type', 'password');
+                      $(input).addClass("fa-eye");
+                      $(input).removeClass("fa-eye-slash");
+                    
+
+                  }
+              }
+          </script>
+          <button class="btn loginBtn"><span>دخول</span></button>
+          <h5>
+            تحتاج مساعدة في تسجيل الدخول<a href="javaScript:;" class="clickHere"> اضغط هنا </a>
+          </h5>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
