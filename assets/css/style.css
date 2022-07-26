@@ -177,7 +177,7 @@ color:white
     font-size: .9em;
 }
 .controlBody{
-    padding:32px 0;
+    padding:25px 0;
 }
 .sideMenu{
     background-color: white;
@@ -193,6 +193,7 @@ font-size:  1.071em;
 padding: 22px 0;
 border-bottom:1px solid #EEEEEE ;
 color:#6D6D6D;
+border-radius: 0;
 }
 .sideMenu .nav-link:hover{
     color:#0B91D2
@@ -229,18 +230,18 @@ opacity: .27;
     font-size:  1.07em;
 }
 .panelTitle{
-    margin-bottom: 32px;
+    margin-bottom: 15px;
     float: left;
 }
 .staticsBox{
     width: 100%;background-color: white;
-    height: 122px;
-    padding:16px;
+    height: 110px;
+    padding:10px;
     border-radius: 8px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
 }
 .statics{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     
 }
 .nopadding{
@@ -250,10 +251,10 @@ opacity: .27;
     background-color: #0B91D2;
     border-radius: 8px;
     width: 100%;
-    height: 122px;
+    height: 110px;
     position: relative;
     overflow: hidden;
-    padding:20px;
+    padding:10px;
     display: flex;
 }
 .goalBox:before{
@@ -270,10 +271,10 @@ opacity: .27;
 .categBox{
     background-color: white;
     border-radius: 8px;
-    height: 174px;
+    height: 155px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
     margin-bottom: 16px;
-    padding:25px 0;
+    padding:15px 0;
     display: block;
     transition: all .5s;
 }
@@ -361,8 +362,8 @@ color:#6D6D6D
 
 }
 .categIconCont{
-    width: 91px;
-    height: 91px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: #F5FCFF;
     display: flex;
@@ -413,23 +414,23 @@ position: absolute;
     position: relative;
     z-index: 4;
     background-color: transparent;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 25px;
 }
 .loginLogo{
 margin: auto;
-margin-bottom: 50px;
+margin-bottom: 20px;
 width: 200px;
 }
 .loginForm{
     background-color: white;
-    padding:32px 70px 44px;
+    padding:25px 70px 35px;
     border-radius: 8px;
     box-shadow:  0 0 20px rgba(11, 145, 210, .2);
 }
 .formLogo{
     margin:auto;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     width: 95px;
 }
 .loginForm h2{
@@ -442,10 +443,10 @@ width: 200px;
 .loginForm p{
     font-size:  1.07em;
     color: #0B91D2;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
 }
 .loginForm .form-group{
-margin-bottom: 16px;
+margin-bottom: 10px;
 }
 .loginForm label{
 color:#6D6D6D;
@@ -492,7 +493,7 @@ font-size: 1em;
     font-size: 1.4em;
     font-weight: bold;
     transition: all .5s;;
-    margin-bottom: 44px;
+    margin-bottom: 35px;
 
 }
 .loginBtn span{
