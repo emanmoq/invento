@@ -5,7 +5,7 @@ jQuery(function ($) {
     var options = {
         series: [70],
         chart: {
-        height: "125",
+        height: "160px",
         type: 'radialBar',
         width: '100%',
       },
@@ -22,9 +22,9 @@ jQuery(function ($) {
                 },
                 value: {
                     color: '#FFAA00',
-                    fontSize: "18",
+                    fontSize: "25",
                     fontWeight: '400',
-                    offsetY: 3,
+                    offsetY: 2,
                     show: true,
                     formatter: function (val) {
                         return val + '%';

@@ -235,10 +235,16 @@ opacity: .27;
 }
 .staticsBox{
     width: 100%;background-color: white;
-    height: 110px;
+    height: 207px;
     padding:10px;
     border-radius: 8px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
+    display: table;
+}
+.innerBox{
+    display: table-cell;
+
+    vertical-align: middle;
 }
 .statics{
     margin-bottom: 15px;
@@ -255,7 +261,8 @@ opacity: .27;
     position: relative;
     overflow: hidden;
     padding:10px;
-    display: flex;
+    display: table;
+    height: 207px;
 }
 .goalBox:before{
     position: absolute ;
@@ -271,7 +278,7 @@ opacity: .27;
 .categBox{
     background-color: white;
     border-radius: 8px;
-    height: 155px;
+    height: 174px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
     margin-bottom: 16px;
     padding:15px 0;
@@ -302,14 +309,15 @@ opacity: .27;
 
 }
 .staticsIconCont{
-    width:53px;
-    height: 53px;
+    width:69px;
+    height: 69px;
     border-radius: 50%;
     margin:auto;
     margin-bottom: 8px;
     display: flex;
     align-content: center;
     justify-content: center;
+    
 }
 .orangeBg{
     background-color: #FFF7EA;
@@ -336,34 +344,27 @@ color:#6D6D6D
     padding-right: 8px;
 }
 .chartBox{
-    width: 80px;
-    float: left;
-    height: 110px;
-    display: flex;
-    align-self: center;
-    margin-right: 14px;
+    width: 104px;
+    height: 104px;
+    margin:auto;
+    margin-bottom: 16px;
 }
 .goalText p{
     font-size:1.001em;
+    display: block;
     color:white;
-    flex: 100%; 
 }
 .goalText span{
-    font: size 0.9em;
+    font-size:1em;
     color:white;
     flex: 100%; 
 }
 .goalText{
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    text-align: center;
 }
 .categIconCont{
-    width: 75px;
-    height: 75px;
+    width: 91px;
+    height: 91px;
     border-radius: 50%;
     background-color: #F5FCFF;
     display: flex;
@@ -515,7 +516,70 @@ font-size: 1em;
 }
 .clickHere:hover{
     color:#3FBF13}
+    /****************************/
+.adminDetailsBox{
+    background-color: white;;
+    border-radius: 8px;
+    height:207px;
+    padding:16px;
+margin-bottom: 15px;
+}
+.adminBoxImg{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: 5px;;
+    overflow: hidden;
+}
+.adimDetailsDesc .AdminName{
+    font-size: 1em;
+    font-weight: bold;
+    color:#0B91D2;
+    margin-bottom: 6px;
+}
+.adimDetailsDesc{text-align: center;
+padding-bottom:14px;
+border-bottom: 1px solid #F5FCFF;}
+.adimDetailsDesc p{
+    font-size: 0.7333333333333333em;
+    color:#6D6D6D
+}
+.sidStatisticsbox{
+    background-color: white;;
+    height:111px;
+    border-radius: 8px;
+    padding:20px;
+    display: flex;
+    width:100%;;
+    margin-bottom: 16px;
+}
+.sidestateImgBox{
+    width: 69px;
+    height:69px;
+    border-radius: 50%;
+    background-color: #F5FCFF;
+    display: flex;
+    justify-content: center;
 
+
+}
+.sidestatImg{
+align-self: center;
+}
+.sidStatisticsbox span{
+    font-size:1em;
+    font-weight: bold;;
+    margin-right: 8px;
+}
+.sidStatisticsbox p{
+font-size:1em;
+}
+.sideStateesc{
+    align-self: center;
+    margin-left:20px;
+    display: flex;
+}
 @media(max-width:850px){
     body{
         font-size: 12px;
