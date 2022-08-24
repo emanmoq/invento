@@ -1,148 +1,189 @@
-body{
-    font-size:14px;
+body {
+    font-size: 14px;
     background-color: #F5FCFF;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     direction: rtl;
     text-align: right;
 }
-img{
-    width: 100%;;
+
+img {
+    width: 100%;
+    ;
 }
-ul,p,h1,h2,h3,h4,h5,h6,form,.form-group{
-    margin:0;
-padding: 0;    
-list-style: none;
-}
-li{
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+.form-group {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-a:hover{
+
+li {
+    list-style: none;
+}
+
+a:hover {
     text-decoration: none;
 }
-header{
+
+header {
     background-color: #0B91D2;
-    padding:15px 0;
+    padding: 15px 0;
     height: 70px;
     position: relative;
-    box-shadow:  0 0 30px rgba(11, 145, 210, .4);
+    box-shadow: 0 0 30px rgba(11, 145, 210, .4);
 }
-header::before{
+
+header::before {
     content: "";
     background-image: url("../images/Intersection\ 1.png");
     width: 100%;
     height: 100%;
     background-size: cover;
-position:absolute;
-top:0;
-right: 0;
-opacity: .46;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .46;
 }
-.logo{
+
+.logo {
     width: 130px;
     display: flex;
     vertical-align: middle;
 }
-.searchForm-control{
+
+.searchForm-control {
     width: 100%;
     border-radius: 3px;
-    border:1px solid #55B1DE;
+    border: 1px solid #55B1DE;
     background-color: transparent;
     padding-right: 30px;
     height: 40px;
-    
+
 }
-.searchForm-control:focus{
-    border:1px solid white; 
+
+.searchForm-control:focus {
+    border: 1px solid white;
     background-color: transparent;
-    color: white;;
+    color: white;
+    ;
 }
-.searchForm-control:focus::placeholder{
-    color:white
+
+.searchForm-control:focus::placeholder {
+    color: white
 }
-.searchForm-control::placeholder{
-    color:#55B1DE;
+
+.searchForm-control::placeholder {
+    color: #55B1DE;
     font-size: .95em;
 }
-.searchIcon{
+
+.searchIcon {
     position: absolute;
-    top:7px;
-    right:0
+    top: 7px;
+    right: 0
 }
+
 .searchForm {
     position: relative;
     width: 100%;
 }
-.searchForm  .form-group{
-    width: 100%;;
+
+.searchForm .form-group {
+    width: 100%;
+    ;
 }
-.mailLink{
+
+.mailLink {
     position: relative;
 }
-.mailLink:before{
+
+.mailLink:before {
     position: absolute;
     content: "";
-    width:6px;
-    height:6px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    top:-1px;
+    top: -1px;
     left: -1px;
     z-index: 1;
     background-color: #CF0000;
 }
-.sideHeader{
-    display:flex;
+
+.sideHeader {
+    display: flex;
     height: 100%;
-    
+
 }
-.headerList{
+
+.headerList {
     display: inline-flex;
     align-self: center;
     margin-left: 50px;
 }
-.headerList li{
+
+.headerList li {
     display: inline-block;
-    padding:5px 27px;
+    padding: 5px 27px;
     position: relative;
 }
-.headerList li:first-child::after{
-    content:"";
+
+.headerList li:first-child::after {
+    content: "";
     height: 23px;
     width: 2px;
     background-color: #55B1DE;
     border-radius: 8px;
     overflow: hidden;
     left: 0;
-    top:2px;
+    top: 2px;
     position: absolute;
 }
-.notifyLink:hover i{
-color:white
+
+.notifyLink:hover i {
+    color: white
 }
-.notifyLinkIcon i{
-    color:#55B1DE;
+
+.notifyLinkIcon i {
+    color: #55B1DE;
     font-size: 16px;
 }
-.sideHeader{
+
+.sideHeader {
     float: left;
 }
-.profile{
+
+.profile {
     display: flex;
     align-self: center;
 }
-.profileBtn{
+
+.profileBtn {
     padding: 0;
 }
-.profileImg{
-    float: right;width: 24px;
+
+.profileImg {
+    float: right;
+    width: 24px;
     height: 24px;
     border-radius: 2px;
     overflow: hidden;
 }
-.profileImg img{
+
+.profileImg img {
     height: 100%;
-    width:auto
+    width: auto
 }
+
 .profile::after {
     display: inline-block;
     margin-right: 0.255em;
@@ -154,335 +195,400 @@ color:white
     border-right: 0.3em solid transparent;
     align-self: center;
 }
-.userName{
-    float:right;
-    margin-right:13px;
+
+.userName {
+    float: right;
+    margin-right: 13px;
     font-size: 14px;
     font-weight: 500;
-    color:#90CAE7;
+    color: #90CAE7;
     ;
 }
-.profile:hover .userName{
-color:white
+
+.profile:hover .userName {
+    color: white
 }
-.profile:hover::after{
-    border-top: 0.3em solid white;  
+
+.profile:hover::after {
+    border-top: 0.3em solid white;
 }
-.profile  .dropdown-menu{
-    top:18px !important
+
+.profile .dropdown-menu {
+    top: 18px !important
 }
-.profile .dropdown-item.active,.dropdown-item:active{
+
+.profile .dropdown-item.active,
+.dropdown-item:active {
     background-color: #0B91D2 !important;
 }
-.profile  .dropdown-menu .dropdown-item{
-    color:#6D6D6D;
+
+.profile .dropdown-menu .dropdown-item {
+    color: #6D6D6D;
     font-size: .9em;
 }
-.controlBody{
-    padding:25px 0;
+
+.controlBody {
+    padding: 25px 0;
 }
-.sideMenu{
+
+.sideMenu {
     background-color: white;
-    padding-right:16px;
-    height: 100%;;
-    padding-bottom:16px;
-    box-shadow:  0 0 20px rgba(11, 145, 210, .2);
+    padding-right: 16px;
+    height: 100%;
+    ;
+    padding-bottom: 16px;
+    box-shadow: 0 0 20px rgba(11, 145, 210, .2);
     padding-left: 9px;
- 
-    border-radius: 8px;}
-.sideMenu .nav-link{
-font-size:  1.071em;
-padding: 22px 0;
-border-bottom:1px solid #EEEEEE ;
-color:#6D6D6D;
-border-radius: 0;
+
+    border-radius: 8px;
 }
-.sideMenu .nav-link:hover{
-    color:#0B91D2
+
+.sideMenu .nav-link {
+    font-size: 1.071em;
+    padding: 22px 0;
+    border-bottom: 1px solid #EEEEEE;
+    color: #6D6D6D;
+    border-radius: 0;
 }
-.sideMenu .nav-link:last-child{
+
+.sideMenu .nav-link:hover {
+    color: #0B91D2
+}
+
+.sideMenu .nav-link:last-child {
     border-bottom: 0;
 }
-.sideLogo{
-position: absolute;
-right:40%;
-bottom:0;
-width: 50px;
-opacity: .27;
+
+.sideLogo {
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+    width: 50px;
+    opacity: .27;
 
 }
-.sideLogo img{
+
+.sideLogo img {
     filter: grayscale(100%);
 }
-.nav-pills{
+
+.nav-pills {
     width: 100%;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: transparent !important;
-    color:#3FBF13 !important;
+    color: #3FBF13 !important;
 }
-.panelTitle h4{
+
+.panelTitle h4 {
     margin-bottom: 8px;
-    color:#0B91D2;
+    color: #0B91D2;
     font-size: 1.78em;
     font-weight: bold;
 }
-.panelTitle p{
-    color:#3FBF13 ;
-    font-size:  1.07em;
+
+.panelTitle p {
+    color: #3FBF13;
+    font-size: 1.07em;
 }
-.panelTitle{
+
+.panelTitle {
     margin-bottom: 15px;
     float: right;
 }
+
 .staticsBox{
     width: 100%;background-color: white;
-    height: 110px;
+    height: 207px;
     padding:10px;
     border-radius: 8px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
+    display: table;
 }
-.statics{
-    margin-bottom:15px;
-    
+.innerBox{
+    display: table-cell;
+
+    vertical-align: middle;
 }
-.nopadding{
-    padding:0
+
+.statics {
+    margin-bottom: 15px;
+
 }
-.goalBox{
+
+.nopadding {
+    padding: 0
+}
+
+.goalBox {
     background-color: #0B91D2;
     border-radius: 8px;
     width: 100%;
-    height: 122px;
+    height: 110px;
     position: relative;
     overflow: hidden;
-    padding:20px;
-    display: flex;
+    padding: 10px;
+    display: table;
+    height: 207px;
 }
-.goalBox:before{
-    position: absolute ;
+
+.goalBox:before {
+    position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     background-image: url(../images/bg.png);
     background-size: cover;
     opacity: .54;
 }
-.categBox{
+
+.categBox {
     background-color: white;
     border-radius: 8px;
-    height: 155px;
+    height: 174px;
     box-shadow: 0 0 25px rgba(11, 145, 210, .1);
     margin-bottom: 16px;
-    padding:15px 0;
+    padding: 15px 0;
     display: block;
     transition: all .5s;
 }
-.categBox:hover{
-    box-shadow: 0 0 25px rgba(11, 145, 210, .2);   
+
+.categBox:hover {
+    box-shadow: 0 0 25px rgba(11, 145, 210, .2);
     transform: scale(1.1);
     transition: all .5s;
 }
-.help{
-    float:left;
+
+.help {
+    float: left;
     font-size: 13px;
-    color:#D9D9D9
+    color: #D9D9D9
 }
-.categTitle h4{
+
+.categTitle h4 {
     margin-bottom: 16px;
-    color:#0B91D2;
+    color: #0B91D2;
     float: right;
-    font-size:1.4em;
+    font-size: 1.4em;
     font-weight: bold;
 }
-.seeAll{
+
+.seeAll {
     float: left;
     font-size: .9em;
-    color:#6D6D6D;
+    color: #6D6D6D;
 
 }
 .staticsIconCont{
-    width:53px;
-    height: 53px;
+    width:69px;
+    height: 69px;
     border-radius: 50%;
     margin:auto;
     margin-bottom: 8px;
     display: flex;
     align-content: center;
     justify-content: center;
+    
 }
-.orangeBg{
+.orangeBg {
     background-color: #FFF7EA;
 }
-.staticsIcon{
+
+.staticsIcon {
     display: flex;
     align-self: center
 }
-.staticsNum{
-    font-size:1.21em;
-    color:#6D6D6D
+
+.staticsNum {
+    font-size: 1.21em;
+    color: #6D6D6D
 }
-.staticsBox span{
-font-size: 0.78em;
-color:#6D6D6D
+
+.staticsBox span {
+    font-size: 0.78em;
+    color: #6D6D6D
 }
-.blueBox{
-    background-color:#E6EBFE ;
-}.greenBox{
+
+.blueBox {
+    background-color: #E6EBFE;
+}
+
+.greenBox {
     background-color: #E7FFF7;
 }
-.innerCol{
+
+.innerCol {
     padding-right: 8px;
     padding-left: 8px;
 }
-.chartBox{
-    width: 80px;
-    float: right;
-    height: 110px;
-    display: flex;
-    align-self: center;
-    margin-left: 14px;
-}
-.goalText p{
-    font-size:1.001em;
-    color:white;
-    flex: 100%; 
-}
-.goalText span{
-    font: size 0.9em;
-    color:white;
-    flex: 100%; 
-}
-.goalText{
-    display: flex;
-    align-self: center;
-    flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
 
+.chartBox {
+    width: 104px;
+    height: 104px;
+    margin: auto;
+    margin-bottom: 16px;
 }
+
+.goalText p {
+    font-size: 1.001em;
+    display: block;
+    color: white;
+}
+
+.goalText span {
+    font-size: 1em;
+    color: white;
+    flex: 100%;
+}
+
+.goalText {
+    text-align: center;
+}
+
 .categIconCont{
-    width: 75px;
-    height: 75px;
+    width: 91px;
+    height: 91px;
     border-radius: 50%;
     background-color: #F5FCFF;
     display: flex;
     margin: auto;
     justify-content: center;
 }
-.categIcon{
+
+.categIcon {
     display: flex;
     align-self: center;
 }
-.categBox h3{
+
+.categBox h3 {
     margin-top: 15px;
-    font-size:1.07em;
+    font-size: 1.07em;
     color: #6D6D6D;
     font-weight: 400;
     text-align: center;
 }
-.noMargin{
+
+.noMargin {
     margin-bottom: 0;
 }
-.loginHeader{
-    content:"";
+
+.loginHeader {
+    content: "";
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
-    right:0;
+    right: 0;
     height: 50%;
     z-index: 1;
     background-color: #0B91D2;
     border-radius: 0 0 15px 15px;
-    box-shadow:  0 0 50px rgba(11, 145, 210, .4);
+    box-shadow: 0 0 50px rgba(11, 145, 210, .4);
 
 }
-.loginHeader::before{
-background-image:url(../images/login.png);
-background-size: cover;
-background-repeat: no-repeat;
-opacity: .46;
-z-index: 2;
-top:0;
-right:0;
-width: 100%;
-height: 100%;;
-content:"";
-position: absolute;
+
+.loginHeader::before {
+    background-image: url(../images/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .46;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    ;
+    content: "";
+    position: absolute;
 }
-.loginSec{
+
+.loginSec {
     position: relative;
     z-index: 4;
     background-color: transparent;
     padding-top: 30px;
     padding-bottom: 25px;
 }
-.loginLogo{
-margin: auto;
-margin-bottom: 20px;
-width: 200px;
+
+.loginLogo {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 200px;
 }
-.loginForm{
+
+.loginForm {
     background-color: white;
-    padding:25px 70px 35px;
+    padding: 25px 70px 35px;
     border-radius: 8px;
-    box-shadow:  0 0 20px rgba(11, 145, 210, .2);
+    box-shadow: 0 0 20px rgba(11, 145, 210, .2);
 }
-.formLogo{
-    margin:auto;
+
+.formLogo {
+    margin: auto;
     margin-bottom: 25px;
     width: 95px;
 }
-.loginForm h2{
+
+.loginForm h2 {
     font-size: 2.85em;
     font-weight: bold;
-    color:#3FBF13;
+    color: #3FBF13;
     text-align: center;
     margin-bottom: 17px;
 }
-.loginForm p{
-    font-size:  1.07em;
+
+.loginForm p {
+    font-size: 1.07em;
     color: #0B91D2;
     margin-bottom: 25px;
 }
-.loginForm .form-group{
-margin-bottom: 10px;
+
+.loginForm .form-group {
+    margin-bottom: 10px;
 }
-.loginForm label{
-color:#6D6D6D;
-font-size: 1em;
+
+.loginForm label {
+    color: #6D6D6D;
+    font-size: 1em;
 }
-.loginForm .form-control{
+
+.loginForm .form-control {
     width: 100%;
     height: 51px;
     border-radius: 8px;
-    border:1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
     font-size: .9em;
-    color:#6D6D6D
+    color: #6D6D6D
 }
-.loginForm .form-control::placeholder{
+
+.loginForm .form-control::placeholder {
     font-size: .9em;
-    color:#6D6D6D
+    color: #6D6D6D
 }
-.loginForm .form-group a{
+
+.loginForm .form-group a {
     font-size: 12px;
-    color:#6D6D6D;
+    color: #6D6D6D;
     float: left;
 }
-.loginForm .form-group{
+
+.loginForm .form-group {
     position: relative;
 }
-.loginForm .form-group i{
-    position: absolute ;
-    color:#D9D9D9;
+
+.loginForm .form-group i {
+    position: absolute;
+    color: #D9D9D9;
     left: 10px;
-    top:55%;
+    top: 55%;
     cursor: pointer;
     font-size: 16px;
 }
-.loginBtn{
+
+.loginBtn {
     background-color: transparent;
     margin-top: 16px;
     border: 1px solid #3FBF13;
@@ -490,71 +596,170 @@ font-size: 1em;
     border-radius: 8px;
     height: 51px;
     display: flex;
-    color:#3FBF13;
+    color: #3FBF13;
     justify-content: center;
     font-size: 1.4em;
     font-weight: bold;
-    transition: all .5s;;
+    transition: all .5s;
+    ;
     margin-bottom: 35px;
 
 }
-.loginBtn span{
+
+.loginBtn span {
     align-self: center;
 }
-.loginBtn:hover{
+
+.loginBtn:hover {
     background-color: #3FBF13;
-    color:white;
-    transition: all .5s;;
+    color: white;
+    transition: all .5s;
+    ;
 }
-.loginForm h5{
+
+.loginForm h5 {
     font-size: 1.07em;
     text-align: center;
-    color:#6D6D6D
+    color: #6D6D6D
 }
-.clickHere{
-    color:#0B91D2;
+
+.clickHere {
+    color: #0B91D2;
     text-decoration: underline;
 }
-.clickHere:hover{
-    color:#3FBF13}
 
-@media(max-width:850px){
-    body{
+.clickHere:hover {
+    color: #3FBF13
+}
+
+/****************************/
+.adminDetailsBox {
+    background-color: white;
+    ;
+    border-radius: 8px;
+    height: 207px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+.adminBoxImg {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+    ;
+    overflow: hidden;
+}
+
+.adimDetailsDesc .AdminName {
+    font-size: 1em;
+    font-weight: bold;
+    color: #0B91D2;
+    margin-bottom: 6px;
+}
+
+.adimDetailsDesc {
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #F5FCFF;
+}
+
+.adimDetailsDesc p {
+    font-size: 0.7333333333333333em;
+    color: #6D6D6D
+}
+
+.sidStatisticsbox {
+    background-color: white;
+    ;
+    height: 111px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    ;
+    margin-bottom: 16px;
+}
+
+.sidestateImgBox {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #F5FCFF;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.sidestatImg {
+    align-self: center;
+}
+
+.sidStatisticsbox span {
+    font-size: 1em;
+    font-weight: bold;
+    ;
+    margin-left: 8px;
+}
+
+.sidStatisticsbox p {
+    font-size: 1em;
+}
+
+.sideStateesc {
+    align-self: center;
+    margin-right: 20px;
+    display: flex;
+}
+
+@media(max-width:850px) {
+    body {
         font-size: 12px;
     }
-    .panelTitle h4{
-        margin-top:20px
+
+    .panelTitle h4 {
+        margin-top: 20px
     }
-    .staticsBox{
+
+    .staticsBox {
         margin-bottom: 20px;
     }
-    .sideHeader{
+
+    .sideHeader {
         float: none;
     }
-    .sideHeader{
-        margin-top:10px
+
+    .sideHeader {
+        margin-top: 10px
     }
-    header{
+
+    header {
         height: auto;
     }
-    .logo{
+
+    .logo {
         margin-bottom: 10px;
     }
 
-    .profile .dropdown-menu{
-        top:7px !important
+    .profile .dropdown-menu {
+        top: 7px !important
     }
-    .loginSec{
-        padding:20px 0 10px;
+
+    .loginSec {
+        padding: 20px 0 10px;
     }
-    .loginLogo{
+
+    .loginLogo {
         margin-bottom: 15px;
     }
-    .loginForm{
-        padding:20px
+
+    .loginForm {
+        padding: 20px
     }
-    .formLogo{
+
+    .formLogo {
         margin-bottom: 10px;
     }
 }
-
