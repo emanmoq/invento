@@ -579,6 +579,31 @@ font-size:1em;
     margin-left:20px;
     display: flex;
 }
+.adminBody{
+    padding: 63px 0;
+}
+.adminPageTitle{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.adminPageTitle p{
+    font-size:1.3333333333333333em;
+    color:#6D6D6D
+}
+.adminPageTitle h5{
+    font-size: 1.6666666666666667em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.adminpanelBox{
+    height: 366px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.adminPanelInner{
+    align-self: center;
+}
 @media(max-width:850px){
     body{
         font-size: 12px;
