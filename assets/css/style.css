@@ -594,12 +594,14 @@ font-size:1em;
     font-size: 1.6666666666666667em;
     font-weight: bold;
     margin-bottom: 15px;
+    color:#0B91D2
 }
 .adminpanelBox{
     height: 366px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    box-shadow: none;
 }
 .adminPanelInner{
     align-self: center;
