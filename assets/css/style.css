@@ -604,6 +604,18 @@ font-size:1em;
 .adminPanelInner{
     align-self: center;
 }
+footer{
+    background-color: white;
+    padding:27px 0;
+}
+footer p{
+color:#6D6D6D
+}
+footer a{
+    color:#0B91D2;
+    font-size:1.3333333333333333em;
+    font-weight: bold;
+}
 @media(max-width:850px){
     body{
         font-size: 12px;
